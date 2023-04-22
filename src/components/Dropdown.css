@@ -1,0 +1,30 @@
+select {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: white;
+    color: #333;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  option {
+    font-size: 16px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  select:hover {
+    border-color: #666;
+  }
+  
+  select:hover option {
+    display: block;
+  }
+  
+  select option:first-of-type {
+    display: none;
+  }
+  
