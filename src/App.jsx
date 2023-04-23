@@ -1,11 +1,13 @@
 import { useState } from 'react'
+import { useEffect } from "react";
+
 import './App.css'
 
 import Dropdown from './components/Dropdown.jsx'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
@@ -13,9 +15,13 @@ function App() {
       <div className="location-name">
         <h1>HOA VIET MARKET</h1>
         <h2>Serving Seafoods, Poultry, & Produce&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
+
         <img id="phone-icon" src="https://cdn3.iconfinder.com/data/icons/contact-us-set-3/256/5-512.png" alt="yes"></img>
         <h3>&emsp;(818) 992-7816<br /></h3>
       </div>
+      <audio controls autoPlay>
+  <source src="mall-music.mp3" type="audio/mpeg" />
+</audio>
 
       {/* <div className='nav-container'>
         <Dropdown />
@@ -47,10 +53,10 @@ function App() {
             <p>21001 Sherman Way<br />
               Los Angeles, CA 91303
             </p>
-            <div>
+            <a href="https://www.yelp.com/map/hoa-viet-market-los-angeles">
               <img id="rest-image"
                 src="https://maps.googleapis.com/maps/api/staticmap?size=315x150&sensor=false&client=gme-yelp&language=en&scale=1&zoom=15&center=34.202214%2C-118.591014&markers=scale%3A1%7Cicon%3Ahttps%3A%2F%2Fyelp-images.s3.amazonaws.com%2Fassets%2Fmap-markers%2Fannotation_32x43.png%7C34.202214%2C-118.591014&signature=-g2dJgLGpxQIssshGKIocbSNSPk=" alt="My Image" />
-            </div>
+            </a>
 
           </div>
           <div className="card-2">
@@ -75,9 +81,9 @@ function App() {
       </div>
 
       <div>
-        <p>&emsp;&emsp;LA Business Project for Snap Academies Engineering&emsp;&ensp;&nbsp;
-        <img id="heart" src="https://cdn-icons-png.flaticon.com/512/1076/1076984.png" alt="yes"></img>
-        &emsp;&ensp;&nbsp;Template-lessly built with HTML, CSS, Javascript, & React
+        <p>&emsp;&emsp;LA-Business Project for Snap Academies Engineering&emsp;&ensp;&nbsp;
+          <img id="heart" src="https://cdn-icons-png.flaticon.com/512/1076/1076984.png" alt="yes"></img>
+          &emsp;&ensp;&nbsp;Template-lessly built with HTML, CSS, Javascript, & React
         </p>
       </div>
     </>

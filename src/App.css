@@ -7,6 +7,8 @@
   color: rgb(92, 0, 0);
 }
 
+
+
 .card {
   padding: 2em;
   padding-top: 1px;
@@ -19,6 +21,11 @@
 
   align-items: center;
   background-color: rgb(255, 255, 235);
+}
+
+.card:hover, .card-2:hover, .location-name:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px rgb(205, 113, 0);
 }
 
 .card h2,
@@ -76,8 +83,13 @@ p {
 }
 
 .location-name h1,
-.location-name h2, h3 {
+.location-name h2, h3, #card-3 {
   display: inline;
+}
+
+#card-3 {
+  background-color: darkred;
+  color: rgb(255, 255, 235);
 }
 
 .location-name h1 {
@@ -128,4 +140,8 @@ p {
   width: 2%;
   padding: 0px;
   margin: 0px;
+}
+
+audio {
+  display: none;
 }
