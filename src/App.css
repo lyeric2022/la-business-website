@@ -123,3 +123,9 @@ p {
 #phone-icon {
   width: 2%;
 }
+
+#heart {
+  width: 2%;
+  padding: 0px;
+  margin: 0px;
+}

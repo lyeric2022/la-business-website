@@ -75,7 +75,10 @@ function App() {
       </div>
 
       <div>
-        <p>hello</p>
+        <p>&emsp;&emsp;LA Business Project for Snap Academies Engineering&emsp;&ensp;&nbsp;
+        <img id="heart" src="https://cdn-icons-png.flaticon.com/512/1076/1076984.png" alt="yes"></img>
+        &emsp;&ensp;&nbsp;Template-lessly built with HTML, CSS, Javascript, & React
+        </p>
       </div>
     </>
   )
