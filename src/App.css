@@ -145,3 +145,28 @@ p {
 audio {
   display: none;
 }
+
+.card h2, .card p {
+  display: inline;
+}
+
+textarea {
+  background-color: white;
+  color:rgb(92, 0, 0);
+  resize: none;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  border-radius: 10px;
+  font-size: medium;
+}
+
+#submit {
+  background-color: brown;
+  color: rgb(255, 255, 235);
+  padding: 7px;
+  margin-top: 20px;
+  margin-bottom: 8.5px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  border-radius: 10px;
+}

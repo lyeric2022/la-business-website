@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useEffect } from "react";
-
+import PhotoViewer from './components/PhotoViewer';
+// import StyledInput from './components/StyledInput';
 import './App.css'
 
 import Dropdown from './components/Dropdown.jsx'
@@ -20,8 +21,8 @@ function App() {
         <h3>&emsp;(818) 992-7816<br /></h3>
       </div>
       <audio controls autoPlay>
-  <source src="mall-music.mp3" type="audio/mpeg" />
-</audio>
+        <source src="mall-music.mp3" type="audio/mpeg" />
+      </audio>
 
       {/* <div className='nav-container'>
         <Dropdown />
@@ -36,8 +37,8 @@ function App() {
 
       <div className="cards-container">
         <div className="card">
-          <h2>About Our Business</h2>
-          <p>Hoa Viet Market is a Vietnamese small business that has served the Los Angeles community for many years. We started as a small seafood and produce stand, and over time we expanded to offer meat, poultry, and specialty items from other cultures.</p>
+          <h2>About Our Business </h2>
+          <p>This site is unofficial. Hoa Viet Market is a Vietnamese small business that has served the Los Angeles community for many years. We started as a small seafood and produce stand, and over time we expanded to offer meat, poultry, and specialty items from other cultures.</p>
 
           <p>Despite our growth, we still pride ourselves on our fresh, high-quality ingredients, and we source from local farmers and fishermen whenever possible. Our customers are like family to us, and we have become a staple of the community, where neighbors come to catch up and share recipes.</p>
 
@@ -77,6 +78,31 @@ function App() {
 
           </div>
         </div>
+
+
+      </div>
+      <div className="cards-container">
+        <div className='ccc'>
+          <div className="card-2">
+            <h2>Our Contact</h2>
+            <p>Job inquiries? Product questions? Customer support?<br />
+            </p>
+            <textarea id="w3review" name="w3review" rows="11" cols="62" ></textarea>
+            <p>Your Email: <br />
+            </p>
+            <textarea id="w3review" name="w3review" rows="1" cols="62" ></textarea>
+            <div id="submit">Submit</div>
+          </div>
+          <div className="card-2">
+            <h2>Our Yelp</h2>
+            <a href="https://www.yelp.com/biz/hoa-viet-market-los-angeles">www.yelp.com/biz/hoa-viet-market-los-angeles</a>
+          </div>
+        </div>
+        <div className="card">
+          <h2>Our Photo Gallery </h2>
+          <PhotoViewer />
+        </div>
+
 
       </div>
 
