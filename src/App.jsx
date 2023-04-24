@@ -93,7 +93,7 @@ function App() {
             <h2>Our Contact</h2>
             <p>Email us for job inquiries, product questions, or customer support!<br />
             </p>
-            <textarea id="w3review" name="w3review" rows="10" cols="62" ></textarea>
+            <textarea id="w3review" name="w3review" rows="9" cols="62" ></textarea>
             <p>Your Email: <br />
             </p>
             <textarea id="w3review" name="w3review" rows="1" cols="62" ></textarea>
@@ -101,15 +101,13 @@ function App() {
           </div>
           <div className="card-2" id="rawr" data-aos="fade-right">
             <h2>Our Yelp</h2>
-            <a href="https://www.yelp.com/biz/hoa-viet-market-los-angeles">www.yelp.com/biz/hoa-viet-market-los-angeles</a>
+            <a id="submit" href="https://www.yelp.com/biz/hoa-viet-market-los-angeles">Take me there!</a>
           </div>
         </div>
         <div className="card" data-aos="fade-left">
           <h2>Our Photo Gallery </h2>
           <PhotoViewer />
         </div>
-
-
       </div>
 
       <div>
