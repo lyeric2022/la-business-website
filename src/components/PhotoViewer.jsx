@@ -5,8 +5,6 @@ const PhotoViewer = () => {
     const photos = [
         "https://cdn.localdatacdn.com/ca/canoga-park/2499391/original/NTylL27PNl.jpg", 
         "https://cdn.localdatacdn.com/ca/canoga-park/2499391/original/ORt1mybLXM.jpg",
-        "https://cdn.localdatacdn.com/ca/canoga-park/2499391/original/aOk1N6xuK3.jpg",
-        "https://cdn.localdatacdn.com/ca/canoga-park/2499391/original/5tir9eUR0k.jpg",
         "https://cdn.localdatacdn.com/ca/canoga-park/2499391/original/bp4kZeTLwn.jpg",
         "https://cdn.localdatacdn.com/ca/canoga-park/2499391/original/N0JDarep6t.jpg",
         "https://cdn.localdatacdn.com/ca/canoga-park/2499391/original/CVzXv2DfqN.jpg",

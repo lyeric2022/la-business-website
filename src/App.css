@@ -157,6 +157,7 @@ textarea {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   border-radius: 10px;
   font-size: medium;
+  padding: 5px;
 }
 
 #submit {
@@ -169,4 +170,8 @@ textarea {
   padding-right: 28px;
 
   border-radius: 10px;
+}
+
+#rawr {
+  padding-bottom: 24.3px;
 }

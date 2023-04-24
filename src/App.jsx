@@ -4,16 +4,22 @@ import PhotoViewer from './components/PhotoViewer';
 // import StyledInput from './components/StyledInput';
 import './App.css'
 
-import Dropdown from './components/Dropdown.jsx'
+import AosScrollComponent from './components/AosScrollComponent';
 
+import Dropdown from './components/Dropdown.jsx'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <>
 
-      <div className="location-name">
+      <div className="location-name" >
         <h1>HOA VIET MARKET</h1>
         <h2>Serving Seafoods, Poultry, & Produce&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
 
@@ -36,7 +42,7 @@ function App() {
       </div> */}
 
       <div className="cards-container">
-        <div className="card">
+        <div className="card" data-aos="fade-right">
           <h2>About Our Business </h2>
           <p>This site is unofficial. Hoa Viet Market is a Vietnamese small business that has served the Los Angeles community for many years. We started as a small seafood and produce stand, and over time we expanded to offer meat, poultry, and specialty items from other cultures.</p>
 
@@ -49,7 +55,7 @@ function App() {
           </div>
         </div>
         <div className='ccc'>
-          <div className="card-2">
+          <div className="card-2" data-aos="fade-left">
             <h2>Where to Find Us</h2>
             <p>21001 Sherman Way<br />
               Los Angeles, CA 91303
@@ -60,11 +66,11 @@ function App() {
             </a>
 
           </div>
-          <div className="card-2">
+          <div className="card-2" data-aos="fade-left">
             <h2>Our Working Hours</h2>
             <p>Monday - Fridays : &emsp;&emsp;9:00 AM - 9:00 PM<br />Weekends : &emsp;&emsp;&emsp;&emsp;&emsp;9:00 AM - 9:00 PM</p>
           </div>
-          <div className="card-2">
+          <div className="card-2" data-aos="fade-left">
             <h2>Our Available Amenities</h2>
             <p>
               <img id="checkmark" src="https://cdn-icons-png.flaticon.com/512/443/443138.png" alt="yes"></img>
@@ -83,22 +89,22 @@ function App() {
       </div>
       <div className="cards-container">
         <div className='ccc'>
-          <div className="card-2">
+          <div className="card-2" data-aos="fade-right">
             <h2>Our Contact</h2>
-            <p>Job inquiries? Product questions? Customer support?<br />
+            <p>Email us for job inquiries, product questions, or customer support!<br />
             </p>
-            <textarea id="w3review" name="w3review" rows="11" cols="62" ></textarea>
+            <textarea id="w3review" name="w3review" rows="10" cols="62" ></textarea>
             <p>Your Email: <br />
             </p>
             <textarea id="w3review" name="w3review" rows="1" cols="62" ></textarea>
             <div id="submit">Submit</div>
           </div>
-          <div className="card-2">
+          <div className="card-2" id="rawr" data-aos="fade-right">
             <h2>Our Yelp</h2>
             <a href="https://www.yelp.com/biz/hoa-viet-market-los-angeles">www.yelp.com/biz/hoa-viet-market-los-angeles</a>
           </div>
         </div>
-        <div className="card">
+        <div className="card" data-aos="fade-left">
           <h2>Our Photo Gallery </h2>
           <PhotoViewer />
         </div>
